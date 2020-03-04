@@ -1,0 +1,18 @@
+#statusbar
+{
+    z-index: 3;
+}
+.spacer
+{
+    flex : 1 ;
+}
+.title
+{
+    flex : 1;
+}
+#statusgauge
+{
+    flex : 3;
+    border-radius: 10px;
+    overflow : hidden;
+}

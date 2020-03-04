@@ -1,0 +1,7 @@
+<div id="statusgauge" class="mat-typography">
+    <div *ngFor="let status of statusData"
+         class="statusdisplay"
+         [ngStyle]="getStatusStyle(status)">
+        <span class="mat-typography numberspan">{{status.number}}</span>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+#mdashboardcomponent 
+{
+    background-color: red;
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-grow: 1;
+    z-index: -1;
+}
+#mdashboardcomponent.loading 
+{
+    
+    align-items: center;
+    justify-content: center;
+}
+#loadingSpinner
+{
+    max-height: 15vh;
+    max-width: 15vh;
+}
+    

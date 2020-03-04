@@ -1,0 +1,2 @@
+C:\Sources\FabbricaConnessa\FabbricaConnessa.FrontEnd\obj\Debug\FabbricaConnessa.FrontEnd.njsprojAssemblyReference.cache
+C:\Sources\FabbricaConnessa\FabbricaConnessa.FrontEnd\bin\Microsoft.NodejsTools.WebRole.dll

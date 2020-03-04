@@ -1,0 +1,15 @@
+#statusgauge 
+{
+    display: flex;
+    min-height: 30px;
+}
+.statusdisplay
+{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.numberspan
+{
+    font-size: 1.3em;
+}

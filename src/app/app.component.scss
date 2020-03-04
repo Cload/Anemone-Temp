@@ -1,0 +1,23 @@
+html{
+    min-height: 100%;
+    display : flex;
+}
+
+html,body{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#dashboard
+{
+    flex-grow: 1;
+    display : flex;
+}
+
+#appcomponent 
+{
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-flow:column;
+}
