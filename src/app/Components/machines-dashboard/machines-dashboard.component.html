@@ -1,3 +1,21 @@
-<div id="mdashboardcomponent" [ngClass]="{'loading' : isLoading}">
-    <mat-spinner id="loadingSpinner"></mat-spinner>
+<div id="mdashboardcomponent" [ngClass]="{'loading' : isLoading}" class="container-fluid mb-3" >
+    <mat-spinner *ngIf="isLoading" id="loadingSpinner"></mat-spinner>
+    <div *ngIf="!isLoading && machineStatuses" class="row m-4  equal p-4">
+        <div
+        *ngFor="let machineStatus of machineStatuses; let i = index;"
+         class="col-lg-4 p-1 mb-5 ">
+         <div class="container-fluid" style="height: 100%;">
+             <div class="row no-gutters" style="height: 100%;">
+                 <div class="col-10 offset-1" style="height: 100%;">
+                    <app-machine-card     
+                    [machineData]="machineStatus"   
+                    
+                    > 
+                    </app-machine-card>
+                 </div>
+             </div>
+         </div>
+        </div>
+
+    </div> 
 </div>

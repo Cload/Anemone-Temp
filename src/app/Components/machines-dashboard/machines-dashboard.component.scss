@@ -1,6 +1,5 @@
 #mdashboardcomponent 
 {
-    background-color: red;
     min-width: 100%;
     min-height: 100%;
     display: flex;
@@ -19,3 +18,8 @@
     max-width: 15vh;
 }
     
+.row.equal
+{
+    display: flex;
+    flex-wrap: wrap;
+}
