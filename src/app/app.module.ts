@@ -9,6 +9,11 @@ import { MachinesDashboardComponent } from './Components/machines-dashboard/mach
 import { StatusBarComponent } from './Components/status-bar/status-bar.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { StatusGaugeComponent } from './Components/status-gauge/status-gauge.component';
+import { MachineCardComponent } from './Components/machine-card/machine-card.component';
+import {MatCardModule} from '@angular/material/card';
+import { UnitCardComponent } from './Components/unit-card/unit-card.component';
+
+
 
 @NgModule({
   declarations: [
@@ -16,6 +21,9 @@ import { StatusGaugeComponent } from './Components/status-gauge/status-gauge.com
     MachinesDashboardComponent,
     StatusBarComponent,
     StatusGaugeComponent,
+    MachineCardComponent,
+    UnitCardComponent,
+    
     
   ],
   imports: [
@@ -24,7 +32,8 @@ import { StatusGaugeComponent } from './Components/status-gauge/status-gauge.com
     AppRoutingModule,
     BrowserAnimationsModule,
     MatProgressSpinnerModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
