@@ -1,0 +1,77 @@
+.card-content
+{
+    border-radius: 4px;
+    min-height: 100px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.mat-card-header-text 
+{
+    margin-left: 0px !important;
+}
+
+.qtydisplay .separatorline{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background-color: black;
+    display: inline-block;
+    border-radius: 3px;
+    min-height: 50px;
+}
+
+.qtydisplay{
+    min-height: 50px;
+    position: relative;
+}
+.qtydisplayrow{
+    min-height: 50px;
+}
+.infodisplay {
+    border-radius: 4px;
+    min-height: 50px;
+}
+.bignumber{
+    font-weight:bold;
+     width: 100%;
+}
+.mainvaluecontainer{
+    min-height: 2.4em;
+}
+.maintextcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.maintextcontainer span
+{
+font-size: 2.4em;
+}
+
+.statusdisplayrow
+{
+    min-height: 25px;
+    background-color: black;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infotext { font-weight: bold}
+
+.machine-card {
+    height: 100%;
+    display: flex;
+    flex-flow: column;;
+}
+.flexcard{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}

@@ -1,0 +1,79 @@
+<mat-card class=" machine-card mat-elevation-z4" [style.maxWidth]="maxContentWidth" style="position: relative;">
+    <mat-card-header>
+        <mat-card-subtitle>{{machineData.Header1Field | titlecase}}</mat-card-subtitle>
+        <mat-card-title>{{machineData.Header2Field}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="flexcard">
+        <div class="container-fluid card-content "  [style.background]="machineData.StatimacchineColorcode" >
+            <div class="row qtydisplayrow pt-3">
+                <div class="col-6 p1 qtydisplay" >
+                    <div class="separatorline" [style.background]="darkBackgroundColor"></div>
+                    <div class="container-fluid">
+                        <div class="row no-gutters mainvaluecontainer">
+                            <div class="col-12" style="text-align: center;" class="maintextcontainer">
+                                <span style="width: 100%; font-weight: bold;">{{machineData.Body1Field}}</span>
+                            </div>
+                        </div>
+                        <div class="row no-gutters ">
+                            <div class="col-12">
+                                <span class="infotext" >{{machineData.Body1Label | uppercase}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 p1 qtydisplay">
+                    <div class="separatorline" [style.background]="darkBackgroundColor"></div>
+                    <div class="container-fluid">
+                        <div class="row no-gutters mainvaluecontainer">
+                            <div class="col-12"  class="maintextcontainer">
+                                <span class="infotext" >{{machineData.Body2Field}}</span>
+                            </div>
+                        </div>
+                        <div class="row no-gutters ">
+                            <div class="col-12">
+                                <span class="infotext" >{{machineData.Body2Label | uppercase}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-2 pb-2">
+                <div class="col-12">
+                    <div class="container-fluid   statusdisplayrow">
+                        <span class="infotext" [style.color]="machineData.StatimacchineColorcode" >{{machineData.Footer1Field | uppercase}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters qtydisplayrow pb-3 ">
+                <div class="col-6 pr-1" >
+                    <div class="container-fluid infodisplay" [style.background]="darkBackgroundColor">
+                        <div class="row no-gutters pt-2">
+                            <div class="col-12">
+                                <span class="mt-1">{{machineData.Footer2Label | titlecase}}:</span>
+                            </div>
+                        </div>
+                        <div class="row no-gutters pt-1 pb-1">
+                            <div class="col-12" *ngIf="machineData.Footer2Type == 'DateTime'">
+                                <span style="font-size: 1.8em;" class="infotext">{{machineData.Footer2Field | date:'h:mm' }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 pl-1 " >
+                    <div class="container-fluid infodisplay" [style.background]="darkBackgroundColor">
+                        <div class="row no-gutters pt-2">
+                            <div class="col-12">
+                                <span class="mt-1">{{machineData.Footer3Label | titlecase}}</span>
+                            </div>
+                        </div>
+                        <div class="row no-gutters pt-1 pb-1">
+                            <div class="col-12">
+                                <span style="font-size: 1.8em;" class="infotext">{{machineData.Footer3Field}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
