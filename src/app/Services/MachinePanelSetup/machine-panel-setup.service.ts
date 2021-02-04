@@ -1,6 +1,6 @@
 import { Injectable, Optional } from '@angular/core'
 import { HttpClient, HttpResponse } from '@angular/common/http'
-import { Observable , from} from 'rxjs';
+import { Observable , from, of} from 'rxjs';
 import { map, catchError, flatMap, mergeAll} from 'rxjs/operators';
 import { ApiUrlService } from '../ApiUrl/api-url.service';
 
@@ -15,8 +15,7 @@ export class MachinePanelSetupService {
    getMachinePanelSetUp(): Observable<number>
    {
     
-    let responseObservable = this.http.get(`${this.apiUrlService ? this.apiUrlService.baseApiUrl : ""}${this.machinePanelSetUpUrl}`, { observe: "body", responseType: 'json' });
-    let numberObservable =   responseObservable.pipe(map(rawxmlresponse => +(rawxmlresponse as unknown) ));
+    let numberObservable = of(54);
     return numberObservable;
 
     
